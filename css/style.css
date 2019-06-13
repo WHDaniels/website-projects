@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+body {
+	background-color: #FFE4C4;
+	min-width: 960px;
+	margin: 0;
+}
+.box {
+	background-color: #e7e7e7;
+	display: inline-block;
+	-moz-box-shadow: 0 0 1px 3px rgba(207, 207, 207, 0.6);
+	-webkit-box-shadow: 0 0 1px 3px rgba(207, 207, 207, 0.6);
+	box-shadow: 0 0 1px 3px rgba(207, 207, 207, 0.6);
+	filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3, MakeShdow=true, ShadowOpacity=0.80);
+	-ms-filter:"progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+	zoom: 1;
+}
+.box > img {
+	display: block;
+	position: relative;
+}
+.clearfix {
+	width: 960px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	clear:both;
+	content:"";
+	display:block;
+	line-height:0;
+	height:1%;
+	visibility:hidden;
+}
+#header {
+	background: #4e5944 url(../images/bg-header.jpg) repeat-x left bottom;
+	padding: 30px 0 15px;
+}
+/** logo **/
+.logo {
+	float: left;
+	display: inline-block;
+}
+/** navigation **/
+.navigation {
+	float: right;
+	list-style: none;
+	margin: 18px 0 0px;
+	padding: 0;
+}
+.navigation li {
+	float: left;
+	margin-left: 30px;
+	position: relative;
+}
+.navigation li > a {
+	color: #b8c6ac;
+	font: bold 16px/24px Times, "Times New Roman", serif;
+	text-decoration: none;
+	text-shadow: 1px 1px #000;
+	text-transform: uppercase;
+	margin: 25px;
+}
+.navigation li.active > a, .navigation li > a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.navigation li > div {
+	background-color: #888888;
+	display: none;
+	width: 110px;
+	position: absolute;
+	left: 0px;
+	top: 24px;
+}
+.navigation li:hover > div {
+	display: block;
+}
+.navigation li > div a {
+	color: #b8c6ac;
+	font: bold 13px/24px "Times New Roman", Times, serif;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: none;
+	text-decoration: underline;
+}
+.navigation li > div a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+/*------------ CONTENTS ------------*/
+#contents {
+	padding-bottom: 24px;
+}
+#contents > div.clearfix:first-child {
+	width: 940px;
+	padding: 30px 10px 0;
+}
+#contents img {
+	border: 1px solid rgba(231, 231, 231, 0.8);
+}
+h1 {
+	color: #1b1b1b;
+	font-family: 'Cinzel', serif;
+	margin: 0;
+	text-transform: uppercase;
+	line-height: 30px;
+	font-size: 38px;
+}
+h2 {
+	color: #626262;
+	font-family: "Libre Baskerville", serif;
+	letter-spacing: 1px;
+	margin: 0 0 12px;
+	text-transform: none;
+}
+h3 {
+	color: #292929;
+	font-family: 'Cinzel', serif;
+	margin: 0;
+	padding : 0;
+	text-transform: uppercase;
+	line-height: 30px;
+	font-size: 18px;
+}
+p {
+	color: #626262;
+	font: 14px/24px Arial, Helvetica, sans-serif;
+	margin: 0 0 12px;
+}
+p a {
+	color: #626262;
+}
+p a:hover {
+	color: #333333;
+}
+/** Adbox **/
+.highlight {
+	background: #FFE4C4 url(../images/bg-highlight.jpg) repeat-x left bottom;
+	border-bottom: 1px solid #FFE4C4;
+}
+.highlight .clearfix {
+	width: 940px;
+}
+.highlight h1 {
+	font-size: 32px;
+	line-height: 36px;
+	padding: 12px 0 12px;
+	text-transform: none;
+}
+.highlight h2 {
+	color: #57614e;
+	margin-bottom: 24px;
+}
+#contents .images img.box {
+	border: 5px solid #bdbbbb;
+}
+/*------------ FOOTER ------------*/
+#footer {
+	background: #FFE4C4 url(../images/bg-footer.png) repeat-x left top;
+	border-top: 2px solid #FFE4C4;
+}
+.scontact h2 {
+	text-transform: none;
+	padding: 55px 0px 30px;
+}
+.scontact p {
+	font-size: 15px;
+	padding: 0px 0px 60px;
+}
+#footnote {
+	background: url(../images/bg-footnote.jpg) repeat-x left top;
+	border-top: 1px solid #fff;
+	padding: 6px 0 3px;
+}
+#footnote p {
+	color: #b5c1aa;
+	font: 11px/30px Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding-right: 10px;
+	text-align: right;
+	text-transform: uppercase;
+}
+#footnote .connect {
+	float: left;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 6px 0;
+}
+#footnote .connect a {
+	display: inline-block;
+	height: 18px;
+	width: 18px;
+	margin-right: 6px;
+}
+#footnote .connect a.facebook {
+	background-position: 0 -112px;
+}
+#footnote .connect a.twitter {
+	background-position: 0 -140px;
+}
+#footnote .connect a.googleplus {
+	background-position: 0 -168px;
+}
+#footnote .connect a.pinterest {
+	background-position: 0 -196px;
+}
+
+body #contents .highlight .clearfix {
+	padding: 35px 0px 0px 0px;
+	margin: 0 310px;
+}
+body #contents .highlight .clearfix ul li {
+	color: #626262;
+	font: 14px/24px Arial, Helvetica, sans-serif;
+	margin: 10px 0;
+	padding: 0;
+}
+#map {
+	height: 500px;
+	width: 1100px;
+}
+#address {
+	width: 960px;
+	display: block;
+	margin: 0 auto;
+}
+#address p {
+	padding: 35px 0px 0px 0px;
+	font-size: 18px;
+}
