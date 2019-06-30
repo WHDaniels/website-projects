@@ -1,5 +1,10 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
+@font-face {
+	font-family: "Open Sans";
+	src: url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+  }
 
 	body {
 		background: #222222;
@@ -116,12 +121,12 @@
 	}
 
 	#contact-us {
-		padding: 0 0 0 38px;
+		padding: 0 0 0 25px;
 	}
 
 	#phone-address {
 		list-style: none;
-		margin: 0 0 2em -12px;
+		margin: 0 0 2em -22px;
 	}
 
 	.image {
