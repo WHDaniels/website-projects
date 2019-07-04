@@ -1,5 +1,7 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
 
 	body {
 		background: #222222;
@@ -7,7 +9,7 @@
 
 	body, input, select, textarea {
 		color: #555555;
-		font-family: 'Open Sans', sans-serif;
+		font-family: 'DM Sans', sans-serif;
 		font-size: 12pt;
 		font-weight: 300;
 		line-height: 1.65em;
@@ -89,8 +91,13 @@
 		text-align: center;
 	}
 
+	#areas .major {
+		padding-bottom: 60px;
+		padding-top: 40px;
+		
+	}
+
 	header.major {
-		padding: 3em;
 		text-align: center;
 		text-transform: uppercase;
 	}
@@ -127,7 +134,7 @@
 	.image {
 		border: 0;
 		position: relative;
-		margin: auto auto auto 75px;
+		margin: auto;
 	}
 	
 	ul.areas-list {
@@ -175,10 +182,16 @@
 
 		.wrapper.style2 {
 			background: #eceae5;
+			padding-top: -50px;
 		}
 
 			.wrapper.style2 .major {
-				text-align: left !important;
+				text-align: right !important;
+				float: right;
+				padding-left: 400px;
+				position: relative;
+				top: 150px;
+  				left: 100px; 
 				
 			}
 
@@ -190,13 +203,16 @@
 					text-transform: uppercase;
 					font-size: 1.8em;
 					font-weight: 400;
+					text-align: center;
 				}
 
 				.wrapper.style2 .major .byline {
 					letter-spacing: normal;
 					line-height: 1.6em;
-					text-transform: capitalize;
+					text-transform: none;
 					font-size: 1.4em;
+					text-align: center;
+					padding: 15px 100px 0px;
 				}
 
 			.wrapper.style2 h3 {
@@ -218,6 +234,8 @@
 			.wrapper.style3 .container {
 				padding-left: 6em;
 				padding-right: 6em;
+				padding-top: 40px;
+				padding-bottom: 80px;
 			}
 
 			.wrapper.style3 p {
@@ -261,34 +279,31 @@
 	}
 
 		#banner .container {
-			padding: 0 150px 700px;
-
+			padding: 6em 8em;
 		}
 
 		#banner h2 {
 			display: inline-block;
-			margin: 0;
 			padding: 0.50em 0.30em;
 			background: #82b440;
 			font-size: 3em;
-			font-weight: 400;
+			font-weight: 100;
+			font-family: 'Oswald', sans-serif;
 		}
 
 		#banner span, #banner p {
-			display: inline-block;
+			display: block;
 			letter-spacing: 1px;
 			text-transform: uppercase;
 			font-size: 1.6em;
 			font-weight: 300;
-			padding: 0 0 300px 0;
+			padding: 0 0 200px 0;
 		}
 
 		#banner span {
-			margin: 0;
-			padding: 0px;
-			color: grey;
-			font-weight: 400;
-			
+			padding: 0;
+			font-family: 'Oswald', sans-serif;
+			font-weight: 100;
 		}
 
 	#footer {
@@ -321,7 +336,7 @@
 		position: relative;
 		text-transform: uppercase;
 		text-align: center;
-		padding: 3em 0em 3em .5em;
+		padding: 3em 0px 3em 3em;
 		color: inherit;
 		opacity: .40;
 		font-size: 12px;
@@ -352,7 +367,8 @@ body {
 .container {
 	margin-left: auto;
 	margin-right: auto;
-	
+	margin-top: -50px;
+	margin-bottom: -50px;
 	width: 1200px;
 }
 
@@ -367,10 +383,16 @@ body {
 }
 
 #areas .major .byline {
-	padding: 0 0 0 25px;
+	padding: 0 0 30px 47px;
+	font-size: 30px;
 }
 
-.\36 u { width: 50% }
+.\36 u { 
+	width: 10%;
+	position: relative;
+	bottom: 100px;
+	right: 25px;
+}
 .\34 u { width: 33.3% }
 .\-6u { margin-left: 40% }
 .\-4u { margin-left: 33.3% }
@@ -387,11 +409,11 @@ body {
 	}
 
 	.row:first-child > * {
-		padding-top: 0 !important;
+		margin: 0;
 	}
 
 		.row > * {
-			padding-left: 40px;
+			padding-left: auto;
 		}
 
 		.row + .row > * {
@@ -411,7 +433,9 @@ body {
 		}
 
 		.row.double {
-			margin-left: 80px;
+			margin-left: 0px;
+			padding-top: 0px;
+			
 		}
 
 	.homepage {
